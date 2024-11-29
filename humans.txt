@@ -1,0 +1,4 @@
+website by J. Alexander D. Atkins
+emails obfuscated using http://www.jottings.com/obfuscator/
+backend uses 5quidhost and whatever versions of PHP, MySQL and Apache they are running
+frontend all coded by hand

@@ -1,0 +1,104 @@
+body {
+  background-color: #F9F8EE;
+  background-image: url('../images/paper.jpg');
+  background-repeat: repeat;
+}
+
+a:link, a:visited {text-decoration: none;      color: #001CB4;}
+a:active          {text-decoration: none;      color: #001CB4;}
+a:focus, a:hover  {text-decoration: underline; color: DarkGreen;}
+
+div.title, div.content {
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.nav {
+  position: fixed; top: 0; right: 0;
+  max-width: 38%;
+  padding: 0.5em;
+  background-color: #F9F9F9;
+  border-left: solid White;
+  border-bottom: solid #DDDDDD;
+  border-width: 1px;
+  text-align: right;
+  font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+  z-index: 3;
+}
+
+div#yellow_msg_box {
+  visibility: hidden;
+  position: absolute; top: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+div#yelmsg_inner {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 62%;
+  padding: 0.3em;
+  text-align: center;
+  overflow: hidden;
+  background-color: Yellow;
+  border-left: solid Orange;
+  border-right: solid Orange; border-bottom: solid Orange;
+  border-width: 2px;
+  color: DarkGreen;
+  font-weight: bold;
+  z-index: 5;
+}
+
+fieldset.main {
+  position: relative;
+  min-width: 47em;
+  max-width: 58em;
+  background-color: #E3E8ED;
+  /* ECECEC C7D0DB */
+  z-index: 4;
+}
+
+legend {
+  background-color: #F9F9F9;
+  border-style: outset;
+  border-width: 1px;
+}
+
+input.offscreen {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+}
+
+div.deletebutton input {
+  background-color: #FFCACA;
+}
+
+div.contact_clients_business {
+  display: table-cell;
+  vertical-align:top;
+}
+
+div.pagenumbers {
+  width: 100%;
+  text-align: center;
+}
+div.pagenumbers p {
+  display: table;
+  border-spacing: 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.pagenumbers span.pagerow { display: table-row; }
+div.pagenumbers span.pagecell { display: table-cell; }
+div.pagenumbers a.arrow {
+  font-size: xx-large;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  top: 1px;
+}
+div.pagenumbers a.arrow:hover { text-decoration: none; }

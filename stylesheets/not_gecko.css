@@ -1,0 +1,13 @@
+@media screen {
+  div.savebutton {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+
+  div.deletebutton {
+    position: absolute;
+    top: 1em;
+    right: 0.5em;
+  }
+}

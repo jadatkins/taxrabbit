@@ -1,0 +1,144 @@
+# Here, the behaviour of action.php is documented.
+
+$_POST should look something like
+
+array(
+  'headings' => array(
+    ... the normal $headings array goes here, for error messages ...
+  ),
+  'navbox' => TRUE,
+  'urls' => array(
+    ... the normal $urls array goes here, for error messages ...
+  ),
+  'goto' => 'job.php?user_id=3&business_id=2&job_id=harry',
+  'users' => array(
+    4 => array(
+      'user_name' => 'Alexander Atkins'
+    )
+  ),
+  'clients' => array(
+    -1 => array(
+      'user_id' => 3,
+      'business_id' => 2,
+      'parent_id' => 5,
+      'abbrev' => 'R4',
+      'client_name' => 'Radio 4',
+      'notes' => ''
+    )
+  ),
+  'metacontacts' => array(
+    -1 => array(
+      'user_id' => 3,
+      'business_id' => 2,
+      'client_id' => -1,
+      'realcontact_id' => 'an_alias'
+    )
+  ),
+  'jobs' => array(
+    'harry' => array(
+      'user_id' => 3,
+      'business_id' => 2,
+      'client_id' => -1,
+      'realcontact_id' => 'an_alias'
+    )
+  )
+)
+
+$_POST may contain other things, either outside these arrays or in them, and
+they will be ignored.  For example, $_POST['client'][14]['favourite_food'] may
+be set if it likes; it will be ignored.  Likewise $_POST['your_horoscope'] may
+also be set, and this will probably be ignored, although it may be used for
+something in the future.  Optional fields for new records (such as notes, e.g.
+$_POST['client'][14]['notes']) need not be set, neither need compulsory fields
+for existing records.  However, if they are set, they will be checked for
+emptiness, and should they be found to be empty, an error message will be
+generated.
+
+The index of each bottom-level array in each case is the last part of that
+record's primary key.  (So the user_id in this case would be 4.)  To specify
+that a new record should be created, the POSTer must give as the index anything
+that either fails php's is_numeric function, or, if it doesn't, is negative.
+Since in HTML all you can give is a string, that means it must be a string not
+beginning with any of the following:
+  • a numeric digit
+  • a . followed by any of the above
+  • a + followed by any of the above
+  • whitespace followed by any of the above
+
+I have just noticed in PHP's documentation on arrays that the only types allowed
+for array keys are integer and string.  But since you can't put quotes around
+an array key in the HTML, the key is an integer if it looks like an integer.
+Otherwise it is a string.  So if in the HTML you have something like
+name="client[-5.2][user_id]" then -5.2 comes through to action.php as a string,
+and action.php leaves it like that.  Here there is an important point to note.
+You must not give a positive number unless it is an integer.  The reason being,
+where it is an array key, it will be left as a string, and treated as an alias,
+but when you refer to it later in other tables, it will be converted to an
+integer, because I really can't be bothered to cater for people who are going to
+be so difficult.  So, to reiterate: aliases must be either negative or not 
+numeric.
+
+During the processing of action.php this will be treated as an 'alias' of the
+real id, which will be discovered with mysqli_insert_id() after the record is
+created.  This alias may be referred to in records in other tables that have
+relationships with the table in question, and in the goto link.  Now there is
+one thing you have to be careful of, and one thing you don't have to be careful
+of.  action.php will recognise that aliases in different tables refer to
+(potentially) different id's, for example the client with an alias of -1 and the
+metacontact with an alias of -1 in the example above will not be confused with
+each other.  However, there would be a problem if you could have two clients with aliases of -1 but
+without the same user_id and business_id as each other.  Obviously, you can't
+have this, because you can't have two different elements in an array with the
+same key.  However, you could have a client with an alias of -1 and, say, a
+user_id of 1 and a business_id of 2.  Then you could have a job with a user_id
+of 3, a business_id of 4 and a client_id of -1.  Let's suppose that, when the
+client is created, it ends up with a client_id of 5.  In that case the job would
+end up with a user_id of 3, a business_id of 4, and a client_id of 5, which is
+probably not what you want.
+
+If the POSTer specifies, say, a metacontact with either an invalid
+realcontact_id or an invalid client_id, I will create a form asking for the
+required details.  Same goes for a client with an invalid parent_id, an expense
+with an invalid job_id, and so on.  If the field in question is not required
+(such as client_id for a job or parent_id for a client) then I will create the
+record anyway and leave the field as NULL, and pass through enough hidden fields
+to the generated form to have the record updated when the new id is known.  If
+the field in question is required (such as user_id or business_id for most
+tables) then I will not create the record, but instead will pass its details as
+hidden fields to the generated form, so that the record will be created at a
+more appropriate time.
+
+The example above would cause the following things to happen:
+1. User No. 4 will have his name updated as specified.  If there is no user No.
+  4, it will be created.
+2. The client will be created as specified.  Since the index of the client in
+  the $_POST['clients'] array (-1 in this case) is not a positive number, the
+  client_id will be computed by MySQL's AUTO_INCREMENT function.
+3. The job will be created as specified, with two differences: a) as with the
+  client, since 'harry' is not a positive number, the job_id will be computed
+  by AUTO_INCREMENT and b) the job's realcontact_id will be left as NULL for
+  the time being.  The reason for this second difference will become a little
+  clearer in just a moment.
+4. The metacontact will not be created yet.
+5. A form will be generated (and displayed), asking for details of the new
+  realcontact that implicitly has to be created.  The fields of this form will
+  be named "realcontacts[an_alias][<field name>]", and various things will be
+  passed through as hidden fields.  headings will be modified, and navbox, urls
+  and goto will be passed.  The following hidden fields will also be generated:
+    metacontacts[<new>][user_id] = "3"
+    metacontacts[<new>][business_id] = "2"
+    metacontacts[<new>][realcontact_id] = "an_alias"
+    jobs[$b][user_id] = "3"
+    jobs[$b][business_id] = "2"
+    jobs[$b][client_id] = "$a"
+    jobs[$b][realcontact_id] = "an_alias"
+  Where <new> is an arbitrary alias (either a negative integer or a non-numeric
+  string) and $a and $b are the mysqli_insert_id()'s of the client and job
+  respectively, fetched after said records were created. .
+
+The result of this is that, if the user fails to provide the details of the
+realcontact that should be created, at least some data will have been created,
+consistent but presumably incomplete.
+
+Tables will be updated in this order:
+users, businesses, clients, realcontacts, metacontacts, jobs, expenses.

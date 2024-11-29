@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>413 Request Entity Too Large</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/stylesheets/screen.css" />
+  <link rel="stylesheet" media="print" type="text/css" href="/stylesheets/print.css" />
+</head>
+<body>
+<div class="title">
+<h1>TaxRabbit<sup>®</sup> <img src="/images/beta.png" alt="beta" style="margin: -8px 0;" /></h1>
+</div>
+<div class="content">
+<h2>Request Entity Too Large</h2>
+<p>The requested resource <!--#echo var="REQUEST_URI" --> does not allow
+   request data with <!--#echo var="REQUEST_METHOD" --> requests, or the
+   amount of data provided in the request exceeds the capacity limit.</p>
+</div>
+</body>
+</html>

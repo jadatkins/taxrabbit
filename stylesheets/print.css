@@ -1,0 +1,15 @@
+body {background-color: White;}
+
+a:link, a:visited {color: #001CB4;}
+
+div.nav, div.savebutton, div.deletebutton, input.button, p.button {display: none;}
+
+div#yellow_msg_box, div#yelmsg_inner {display: none;}
+
+input.offscreen {display: none;}
+
+div.contact_clients_business {display: none;}
+
+.noprint { display: none; }
+
+div.pagenumbers { display: none; }

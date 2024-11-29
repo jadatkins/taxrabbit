@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>500 Internal Server Error</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/stylesheets/screen.css" />
+  <link rel="stylesheet" media="print" type="text/css" href="/stylesheets/print.css" />
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+<div class="title">
+<h1>TaxRabbit<sup>®</sup> <img src="/images/beta.png" alt="beta" style="margin: -8px 0;" /></h1>
+</div>
+<div class="content">
+<h2>Internal Server Error</h2>
+<p>The server encountered an internal error or misconfiguration and was unable
+   to complete your request.</p>
+  <p>Please contact the server administrator,
+    <script type="text/javascript" language="javascript">
+    <!--
+    insert_detail(true);
+    // -->
+    </script>
+    <noscript>
+    <img src="images/contact.png" alt="me" style="position: relative; top: 1px;" />
+    </noscript>
+   and inform them of the time the error occurred, and anything you might have
+   done that may have caused the error.</p>
+</div>
+</body>
+</html>

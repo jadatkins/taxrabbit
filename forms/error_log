@@ -1,0 +1,124 @@
+[24-Jan-2013 17:48:46] REQUEST_URI: /forms/client.php
+[24-Jan-2013 17:48:46] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:46] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:46] REQUEST_URI: /forms/client.php
+[24-Jan-2013 17:48:46] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:46] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:46] REQUEST_URI: /forms/client.php
+[24-Jan-2013 17:48:46] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:46] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:46] REQUEST_URI: /forms/client.php
+[24-Jan-2013 17:48:46] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:46] include() [<a href='function.include'>function.include</a>]: Failed opening './include/panic.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:50] REQUEST_URI: /forms/contact.php
+[24-Jan-2013 17:48:50] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:50] Undefined index:  user_id in /home/taxrabbi/public_html/forms/contact.php on line 6
+[24-Jan-2013 17:48:54] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 17:48:54] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:54] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 17:48:54] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 17:48:54] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:54] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 17:48:58] REQUEST_URI: /forms/job.php
+[24-Jan-2013 17:48:58] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:58] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:58] REQUEST_URI: /forms/job.php
+[24-Jan-2013 17:48:58] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:58] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:58] REQUEST_URI: /forms/job.php
+[24-Jan-2013 17:48:58] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:58] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:48:58] REQUEST_URI: /forms/job.php
+[24-Jan-2013 17:48:58] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:48:58] include() [<a href='function.include'>function.include</a>]: Failed opening './include/panic.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 17:49:18] REQUEST_URI: /forms/contact.php
+[24-Jan-2013 17:49:18] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:49:18] Undefined index:  user_id in /home/taxrabbi/public_html/forms/contact.php on line 6
+[24-Jan-2013 17:49:43] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 17:49:43] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:49:43] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 17:49:43] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 17:49:43] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 17:49:43] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:13:39] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:13:39] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 20:13:39] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:13:39] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:13:39] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[24-Jan-2013 20:13:39] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:14:11] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:14:11] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:14:11] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:14:11] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:14:11] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:14:11] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:14:26] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:14:26] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:14:26] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:14:26] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:14:26] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:14:26] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:15:37] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:15:37] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:15:37] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:15:37] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:15:37] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:15:37] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:17:58] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:17:58] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:17:58] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:17:58] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:17:58] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:17:58] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:18:01] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:01] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:01] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:18:01] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:01] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:01] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:18:03] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:03] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:03] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:18:03] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:03] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:03] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:18:15] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:15] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:15] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[24-Jan-2013 20:18:15] REQUEST_URI: /forms/expense.php
+[24-Jan-2013 20:18:15] HTTP_REFERER: http://taxrabbit.co.uk/diary.php?user_id=1&business_id=2
+[24-Jan-2013 20:18:15] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[24-Jan-2013 20:30:02] PHP Warning:  include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 20:30:02] REQUEST_URI: /forms/job.php?user_id=1&business_id=3
+[24-Jan-2013 20:30:02] HTTP_REFERER: http://taxrabbit.co.uk/sample.html
+[24-Jan-2013 20:30:02] include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 20:30:02] PHP Warning:  include(./include/panic.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/php/footer.php on line 7
+[24-Jan-2013 20:30:02] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './include/panic.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/taxrabbi/public_html/php/footer.php on line 7
+[27-Jan-2013 16:54:42] REQUEST_URI: /forms/expense.php
+[27-Jan-2013 16:54:42] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[27-Jan-2013 16:54:42] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[27-Jan-2013 16:54:42] REQUEST_URI: /forms/expense.php
+[27-Jan-2013 16:54:42] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[27-Jan-2013 16:54:42] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[11-Feb-2013 17:20:52] REQUEST_URI: /forms/contact.php
+[11-Feb-2013 17:20:52] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[11-Feb-2013 17:20:52] Undefined index:  user_id in /home/taxrabbi/public_html/forms/contact.php on line 6
+[11-Feb-2013 17:20:53] REQUEST_URI: /forms/expense.php
+[11-Feb-2013 17:20:53] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[11-Feb-2013 17:20:53] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[11-Feb-2013 17:20:53] REQUEST_URI: /forms/expense.php
+[11-Feb-2013 17:20:53] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[11-Feb-2013 17:20:53] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6
+[11-Feb-2013 17:21:04] REQUEST_URI: /forms/contact.php?business_id=1
+[11-Feb-2013 17:21:04] HTTP_REFERER: 
+[11-Feb-2013 17:21:04] Undefined index:  user_id in /home/taxrabbi/public_html/forms/contact.php on line 6
+[11-Feb-2013 17:24:41] PHP Warning:  require_once(BASEURLphp/forms/client_menu.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/forms/client.php on line 3
+[11-Feb-2013 17:24:41] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'BASEURLphp/forms/client_menu.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/taxrabbi/public_html/forms/client.php on line 3
+[11-Feb-2013 17:24:47] PHP Warning:  require_once(BASEURLphp/forms/client_menu.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/taxrabbi/public_html/forms/client.php on line 3
+[11-Feb-2013 17:24:47] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'BASEURLphp/forms/client_menu.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/taxrabbi/public_html/forms/client.php on line 3
+[11-Feb-2013 19:39:21] REQUEST_URI: /forms/expense.php
+[11-Feb-2013 19:39:21] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[11-Feb-2013 19:39:21] Undefined index:  user_id in /home/taxrabbi/public_html/forms/expense.php on line 5
+[11-Feb-2013 19:39:21] REQUEST_URI: /forms/expense.php
+[11-Feb-2013 19:39:21] HTTP_REFERER: http://taxrabbit.co.uk/forms/
+[11-Feb-2013 19:39:21] Undefined index:  business_id in /home/taxrabbi/public_html/forms/expense.php on line 6

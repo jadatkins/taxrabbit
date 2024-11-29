@@ -1,0 +1,90 @@
+body {
+  color: Black;
+  font-family: Optima, Tahoma, sans-serif;
+  font-size: small;
+}
+
+h1, h2, h3 {padding: 0;}
+
+h1 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 1em;
+  clear: both;
+}
+
+p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+div.fb-like {
+  margin-top: 0.4em;
+}
+
+fieldset {
+  margin-top: 0.5em;
+  font-family: Optima, Tahoma, sans-serif;
+  padding: 0.5em 0.62em 0.62em;
+  margin-bottom: 0.75em;
+}
+
+ul {
+  padding-left: 1em;
+  margin-left: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+li ul {
+  padding-left: 1em;
+  margin-left: 0;
+}
+
+ul.nobullets {list-style-type: none;}
+ul.type1 {list-style-type: disc;}
+ul.type2 {list-style-type: circle;}
+ul.type3 {list-style-type: square;}
+
+dl {margin-top: 0;}
+dt {margin-top: 0.5em;}
+dd {
+  margin-bottom: 0.25em;
+  margin-left: 1.667em;
+  padding-left: 0;
+}
+
+div.column {float: left; margin-bottom: 1em;}
+div.radio {margin-right: 0.5em;}
+
+div.table {display: table;}
+div.tablerow {display: table-row;}
+div.tablecell {display: table-cell;}
+
+span.catcode {
+  color: White;
+  background: Navy;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+span.osuper {
+  vertical-align: text-top;
+  font-size: smaller;
+  text-decoration: underline;
+/*line-height: 0; */
+}
+
+span.numero {font-family: "Helvetica Neue", "Microsoft Sans Serif", Arial, Helvetica, sans-serif;}
+
+input.numeric {text-align: right;}
+
+input.weekday {text-align: center;}
